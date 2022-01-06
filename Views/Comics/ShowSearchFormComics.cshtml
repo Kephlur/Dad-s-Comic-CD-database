@@ -1,0 +1,40 @@
+﻿<h4>Search for comics</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ShowSearchResultsComics">
+            <div class="form-group">
+                <p>Search for a comicbook name:</p>
+                <label for="SearchPhraseName" class="control-label"></label>
+                <input name="SearchPhraseName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <p>Search for an issue number:</p>
+                <label for="SearchPhraseIssueNum" class="control-label"></label>
+                <input name="SearchPhraseIssueNum" class="form-control" />
+            </div>
+            <div class="form-group">
+                <p>Search for an artist:</p>
+                <label for="SearchPhraseArtist" class="control-label"></label>
+                <input name="SearchPhraseArtist" class="form-control" />
+            </div>
+            <div class="form-group">
+                <p>Search for a writer:</p>
+                <label for="SearchPhraseWriter" class="control-label"></label>
+                <input name="SearchPhraseWriter" class="form-control" />
+            </div>
+            <div class="form-group">
+                <p>Search for a publisher:</p>
+                <label for="SearchPhrasePublisher" class="control-label"></label>
+                <input name="SearchPhrasePublisher" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
